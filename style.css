@@ -71,6 +71,32 @@ main {
 }
 article {
     flex-basis: 60%;
+    text-align: justify;
+}
+.singular_article {
+    margin: 0 auto;
+}
+.big_img {
+    margin: 5% auto;
+    display: block;
+    width: 80%;
+}
+.mid_img {
+    width: 60%;
+    margin: 5% auto;
+    display: block;
+}
+.small_img {
+    width: 40%;
+    margin: 5px;
+}
+.left_img {
+    display: block;
+    float: left;
+}
+.right_img {
+    display: block;
+    float: right;
 }
 footer {
     border-top: 1px solid gray;
