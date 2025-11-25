@@ -56,7 +56,7 @@ section {
     line-height: 200px;
 }
 main {
-    margin: auto;
+    margin: 15px auto;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
