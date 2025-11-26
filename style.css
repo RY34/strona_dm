@@ -62,7 +62,7 @@ nav > a:hover {
     color: var(--text-color);
 }
 section {
-    margin: 5% auto;
+    margin: 5vw auto;
     height: 200px;
     width: 100%;
     text-align: center;
@@ -71,23 +71,23 @@ section {
 main {
     margin: 15px auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-content: left;
+    column-gap: 2vw;
 }
 .tab_of_con {
     text-align: center;
-    flex-basis: 15%;
+    width: 15vw;
     align-self: flex-start;
-    margin: 0 2% 0 2.5%;
     position: sticky;
     top: 100px;
+    left: 1vw;
     border: 3px solid var(--accent-color);
     border-radius: 15px;
 }
 article {
-    flex-basis: 55%;
+    flex-basis: 60vw;
     text-align: justify;
     border: 3px solid var(--secondary-accent);
     border-radius: 15px;
