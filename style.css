@@ -117,7 +117,7 @@ footer > * {
 
 @media (orientation: portrait) {
     body {
-        font-size: 1vh;
+        font-size: 2vh;
     }
     nav {
         flex-direction: column;
