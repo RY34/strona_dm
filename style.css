@@ -1,7 +1,19 @@
+:root {
+    --bg-color: #fff;
+    --accent-color: #d5f2ff;
+    --secondary-accent: #c6e8ff;
+    --text-color: #000;
+    --secondary-text: gray;
+}
+@font-face {
+    font-family: figtree;
+    src: url("./res/Figtree/Figtree-VariableFont_wght.ttf");
+}
 body {
     padding: 0;
     margin: 0;
-    font-size: 1vw;
+    font-size: 1.5vw;
+    font-family: figtree;
 }
 a {
     text-decoration: none;
@@ -27,18 +39,18 @@ nav {
     text-align: center;
     position: sticky;
     top: 0px;
-    background-color: #fff;
+    background-color: var(--bg-color);
 }
 nav > a {
     height: 50px;
     line-height: 50px;
     flex-basis: 25%;
-    color: gray;
-    border-left: 1px solid gray;
+    color: var(--secondary-text);
+    border-left: 1px solid var(--secondary-text);
 }
 nav > a:hover {
-    background: radial-gradient(#c6e8ff, rgba(0, 0, 0, 0));
-    color: black;
+    background: radial-gradient(var(--secondary-accent), rgba(0, 0, 0, 0));
+    color: var(--text-color);
 }
 nav > a:first-of-type {
     border-left: 0;
@@ -47,8 +59,8 @@ nav > a:last-of-type {
     border-right: 0;
 }
 .nav_active {
-    background: radial-gradient(#d5f2ff, rgba(0, 0, 0, 0));
-    color: black;
+    background: radial-gradient(var(--accent-color), rgba(0, 0, 0, 0));
+    color: var(--text-color);
 }
 section {
     height: 200px;
@@ -104,10 +116,10 @@ article {
     margin-bottom: 0;
 }
 footer {
-    border-top: 1px solid gray;
+    border-top: 1px solid var(--secondary-text);
     font-size: 0.9rem;
     background-color: lightgray;
-    color: gray;
+    color: var(--secondary-text);
     margin: auto;
     height: 100px;
 }
@@ -125,6 +137,10 @@ footer > * {
     }
     main {
         flex-direction: column;
+        justify-content: center;
         width: 80%;
+    }
+    .tab_of_con {
+        align-self: center;
     }
 }
