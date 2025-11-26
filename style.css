@@ -74,23 +74,31 @@ main {
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-content: left;
 }
 .tab_of_con {
     text-align: center;
     flex-basis: 15%;
     align-self: flex-start;
-    margin: 0 2.5%;
+    margin: 0 2% 0 2.5%;
     position: sticky;
     top: 100px;
     border: 3px solid var(--accent-color);
     border-radius: 15px;
 }
 article {
-    flex-basis: 60%;
+    flex-basis: 55%;
     text-align: justify;
     border: 3px solid var(--secondary-accent);
     border-radius: 15px;
     padding: 0 2.5% 2.5% 2.5%;
+}
+.tab_of_con > ol {
+    margin: auto;
+    display: block;
+    width: 80%;
+    padding: 0;
+    list-style-position: inside;
 }
 .singular_article {
     margin: 0 auto;
@@ -122,7 +130,7 @@ article {
     margin-bottom: 0;
 }
 footer {
-    border-top: 1px solid var(--secondary-text);
+    padding: 10px 0 0 0;
     font-size: 0.9rem;
     background-color: lightgray;
     color: var(--secondary-text);
