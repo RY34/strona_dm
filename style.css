@@ -34,7 +34,7 @@ header > img {
 nav {
     width: 95vw;
     margin: 15px auto;
-    height: 80px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -46,12 +46,19 @@ nav {
     background-color: (var(--bg-color));
 }
 nav > a {
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
     flex-basis: 20%;
     color: var(--secondary-text);
     background: radial-gradient(var(--accent-color), var(--bg-color));
-    border-radius: 15px;
+}
+nav > a:first-of-type {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+nav > a:last-of-type {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 }
 nav > a:hover {
     background: radial-gradient(var(--secondary-accent), var(--bg-color));
@@ -63,10 +70,10 @@ nav > a:hover {
 }
 section {
     margin: 5vw auto;
-    height: 200px;
+    height: 100px;
     width: 100%;
     text-align: center;
-    line-height: 200px;
+    line-height: 100px;
 }
 main {
     margin: 15px auto;
@@ -75,14 +82,20 @@ main {
     justify-content: left;
 }
 .tab_of_con {
-    text-align: center;
     width: 15vw;
-    align-self: flex-start;
     position: sticky;
     top: 100px;
     left: 2vw;
     border: 3px solid var(--accent-color);
     border-radius: 15px;
+    height: 15vw;
+}
+.tab_of_con > ol {
+    text-align: center;
+    width: 80%;
+    list-style-position: inside;
+    padding: 0;
+    margin: 5px auto;
 }
 article {
     text-align: justify;
@@ -90,13 +103,6 @@ article {
     border-radius: 15px;
     padding: 0 2.5% 2.5% 2.5%;
     grid-column: 2;
-}
-.tab_of_con > ol {
-    margin: auto;
-    display: block;
-    width: 80%;
-    padding: 0;
-    list-style-position: inside;
 }
 .singular_article {
     margin: 0 auto;
@@ -148,6 +154,10 @@ footer > * {
         flex-direction: column;
         height: auto;
     }
+    nav > a {
+        height: 30px;
+        line-height: 30px;
+    }
     main {
         grid-template-columns: 10vw 80vw 10vw;
         grid-template-rows: 25vh auto;
@@ -156,10 +166,11 @@ footer > * {
         position: relative;
         top: 0;
         text-align: left;
-        width: 50%;
+        width: 50vw;
         grid-row: 1;
         grid-column: 2;
         margin: 0 auto;
+        height: 20vh;
     }
     article {
         grid-row: 2;
