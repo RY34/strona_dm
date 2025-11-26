@@ -165,11 +165,11 @@ footer > * {
     .tab_of_con {
         position: relative;
         top: 0;
-        text-align: left;
-        width: 50vw;
+        left: 0;
         grid-row: 1;
         grid-column: 2;
-        margin: 0 auto;
+        width: auto;
+        margin: 0;
         height: 20vh;
     }
     article {
