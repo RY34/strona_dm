@@ -32,7 +32,7 @@ header > img {
     margin: 5px auto;
 }
 nav {
-    width: 95%;
+    width: 95vw;
     margin: 15px auto;
     height: 80px;
     display: flex;
@@ -70,11 +70,9 @@ section {
 }
 main {
     margin: 15px auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
     justify-content: left;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    column-gap: 2vw;
 }
 .tab_of_con {
     text-align: center;
@@ -82,16 +80,16 @@ main {
     align-self: flex-start;
     position: sticky;
     top: 100px;
-    left: 1vw;
+    left: 2vw;
     border: 3px solid var(--accent-color);
     border-radius: 15px;
 }
 article {
-    flex-basis: 60vw;
     text-align: justify;
     border: 3px solid var(--secondary-accent);
     border-radius: 15px;
     padding: 0 2.5% 2.5% 2.5%;
+    grid-column: 2;
 }
 .tab_of_con > ol {
     margin: auto;
@@ -151,15 +149,20 @@ footer > * {
         height: auto;
     }
     main {
-        flex-direction: column;
-        width: 80%;
+        grid-template-columns: 10vw 80vw 10vw;
+        grid-template-rows: 25vh auto;
     }
     .tab_of_con {
-        align-self: center;
         position: relative;
         top: 0;
-        margin: 0 0 10% 0;
         text-align: left;
         width: 50%;
+        grid-row: 1;
+        grid-column: 2;
+        margin: 0 auto;
+    }
+    article {
+        grid-row: 2;
+        grid-column: 2;
     }
 }
