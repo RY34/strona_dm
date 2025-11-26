@@ -132,6 +132,7 @@ footer > * {
         font-size: 2vh;
     }
     nav {
+        position: relative;
         flex-direction: column;
         height: auto;
     }
@@ -140,10 +141,11 @@ footer > * {
         justify-content: center;
         width: 80%;
     }
-    /*.tab_of_con {
+    .tab_of_con {
         align-self: center;
         position: relative;
-        margin: 0;
-        text-align: center;
-    }*/
+        margin: 2.5% 0 10% 0;
+        text-align: left;
+        width: 50%;
+    }
 }
