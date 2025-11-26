@@ -140,7 +140,10 @@ footer > * {
         justify-content: center;
         width: 80%;
     }
-    .tab_of_con {
+    /*.tab_of_con {
         align-self: center;
-    }
+        position: relative;
+        margin: 0;
+        text-align: center;
+    }*/
 }
