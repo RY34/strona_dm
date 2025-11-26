@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-size: 1vw;
 }
 a {
     text-decoration: none;
@@ -93,10 +94,14 @@ article {
 .left_img {
     display: block;
     float: left;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 .right_img {
     display: block;
     float: right;
+    margin-right: 0;
+    margin-bottom: 0;
 }
 footer {
     border-top: 1px solid gray;
@@ -108,4 +113,18 @@ footer {
 }
 footer > * {
     margin: 10px 10%;
+}
+
+@media (orientation: portrait) {
+    body {
+        font-size: 1vh;
+    }
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+    main {
+        flex-direction: column;
+        width: 80%;
+    }
 }
